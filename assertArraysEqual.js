@@ -1,10 +1,9 @@
-const assertArraysEqual = function(actual, expected) {
-  if (actual === expected) {
-    let output1 = actual + ' === ' + expected;
-    console.log(`✅✅✅ Assertion Passed:  ${output1}`);
+let assertArraysEqual = function(actual, expected) {
+  const result = eqArrays (actual, expected);
+  if (result === true) {
+    console.log(`✅✅✅ Assertion Passed:  ${actual} === ${expected}`);
   } else {
-    let output2 = actual + ' !== ' + expected;
-    console.log(`🛑🛑🛑 Assertion Failed:  ${output2}`);
+    console.log(`🛑🛑🛑 Assertion Failed:  ${actual} !== ${expected}`);
   }
 };
 
