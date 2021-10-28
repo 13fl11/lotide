@@ -20,7 +20,6 @@ const eqObjects = function(object1, object2) {
     } else if (object1[value] !== object2[value]) {
         return false;
       }
-
   }
   return true;
 };
